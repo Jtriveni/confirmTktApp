@@ -12,6 +12,38 @@ class ActionHelper {
         driver.launchApp();
     }
 
+     public boolean performClick(String element) {
+                if (isDisplayed(element)) {
+                    waitUntilClickable(element);
+                    wbElement.click();
+                    return true;
+                }
+                return false;
+            }
+
+     public boolean performSetText(String element, String data) {
+                    if (isDisplayed(element)) {
+                        wbElement.sendKeys(data);
+                        return true;
+                    }
+                    return false;
+                }
+
+     public boolean isIOS() {
+                  boolean isIOS = false;
+                  if (jvmOptions.getPlatform().equalsIgnoreCase("ios")) {
+                      isIOS = true;
+                  }
+                  return isIOS;
+              }
+
+      public boolean isDisplayed(String element) {
+                 if (isDisplayed(element)) {
+                          return true;
+                  }
+                      return false;
+                  }
+
     static switchToNativeContext() {
         browser.switchContext('NATIVE_APP');
     }

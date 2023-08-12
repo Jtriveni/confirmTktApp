@@ -25,8 +25,8 @@ config.capabilities = [
         fullReset: false,
         maxInstances: 1,
         automationName: 'XCUITest',
-        deviceName: IosInfo.deviceName(),
-        platformVersion: IosInfo.platFormVersion(),
+        deviceName: 'iPhone 14',
+        platformVersion: '16.4',
         app: IosInfo.appName() //use - path.resolve(`./apps/${IosInfo.appName()}`) if passing a custom app
     }
 ];

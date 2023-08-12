@@ -10,8 +10,8 @@ config.capabilities = [
         fullReset: false,
         maxInstances: 1,
         automationName: 'uiautomator2',
-        deviceName: AndroidInfo.deviceName(),
-        platformVersion: AndroidInfo.platFormVersion(),
+        deviceName: 'pixel_3a',
+        platformVersion: '13',
         app: path.resolve(`./apps/${AndroidInfo.appName()}`)
     }
 ];

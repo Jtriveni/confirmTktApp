@@ -20,7 +20,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './src/featureFiles/sampleTest.feature'
+        './src/featureFiles/confirmTkt.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -118,7 +118,8 @@ exports.config = {
         require: [
             './src/stepDefinitions/celsiusToFahrenheitConvertor.steps.js',
             './src/stepDefinitions/google.steps.js',
-            './src/stepDefinitions/settings.steps.js'
+            './src/stepDefinitions/settings.steps.js',
+            './src/stepDefinitions/confirmTkt.steps.js
         ],
         snippetSyntax: undefined,
         snippets: true,
